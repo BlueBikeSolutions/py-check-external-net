@@ -55,9 +55,9 @@ it's treated as a domain.
   >>> check_external_net.is_external_host('dutyof.care')
   True
 
-.. `IPv4 mapped`: https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv6Address.ipv4_mapped
-.. `IPv4 reserved networks`: https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml
-.. `IPv6 reserved networks`: https://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml
-.. `is_global`: https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv4Address.is_global
-.. `Mozilla public suffix registry`: https://publicsuffix.org
-.. `ipaddress.ip_address`: https://docs.python.org/3/library/ipaddress.html#ipaddress.ip_address
+.. _`IPv4 mapped`: https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv6Address.ipv4_mapped
+.. _`IPv4 reserved networks`: https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml
+.. _`IPv6 reserved networks`: https://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml
+.. _`is_global`: https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv4Address.is_global
+.. _`Mozilla public suffix registry`: https://publicsuffix.org
+.. _`ipaddress.ip_address`: https://docs.python.org/3/library/ipaddress.html#ipaddress.ip_address
