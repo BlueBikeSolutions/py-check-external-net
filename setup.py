@@ -1,34 +1,39 @@
 """ Check domains, IPs, and hosts to ensure they are "external" """
+import pathlib
+import re
+
+from collections import OrderedDict
 from setuptools import setup
 
 
-with io.open('README.rst', 'rt', encoding='utf8') as f:
-    readme = f.read()
+HERE = pathlib.Path(__file__).parent
+README = (HERE / 'README.rst').read_text()
+VERSION = re.search(
+    r"__version__ = '(.*?)'",
+    (HERE / 'check_external_net/__init__.py').read_text(),
+).group(1)
 
-with io.open('flask/__init__.py', 'rt', encoding='utf8') as f:
-    version = re.search(r'__version__ = \'(.*?)\'', f.read()).group(1)
-
-github = 'https://github.com/bluebikesolutions/py-check-external-net'
+GITHUB = 'https://github.com/bluebikesolutions/py-check-external-net'
 
 setup(
     name = 'check_external_net',
-    version = version,
-    url = github,
+    version = VERSION,
+    url = GITHUB,
     project_urls=OrderedDict((
-        ('Documentation', github + '/blob/master/README.rst'),
-        ('Code', github),
-        ('Issue tracker', github + '/issues'),
+        ('Documentation', GITHUB + '/blob/master/README.rst'),
+        ('Code', GITHUB),
+        ('Issue tracker', GITHUB + '/issues'),
     )),
     license = 'BSD',
     author = 'Ricky Cook',
     author_email = 'ricky.cook@bluebike.com.au',
     description = 'Check domains, IPs, and hosts to ensure they are "external"',
-    long_description = readme,
+    long_description = README,
     py_modules = ['check_external_net'],
     install_requires = (
         'publicsuffix2',
     ),
-    classifiers = (
+    classifiers = [
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
@@ -44,6 +49,6 @@ setup(
         'Topic :: Internet',
         'Topic :: Security',
         'Topic :: Software Development :: Libraries :: Python Modules',
-    ),
+    ],
 )
 
