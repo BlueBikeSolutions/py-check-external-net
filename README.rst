@@ -16,7 +16,7 @@ If we are able to discern an `IPv4 mapped`_ address, that is passed through
 as the address to check rather than the original.
 
 From there, all `IPv4 reserved networks`_, and `IPv6 reserved networks`_ are
-considered "internal" (see `is_global`_)
+considered "internal" (see is_global_)
 
 Internal domains (``is_external_domain``)
 -----------------------------------------
@@ -58,6 +58,6 @@ it's treated as a domain.
 .. _`IPv4 mapped`: https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv6Address.ipv4_mapped
 .. _`IPv4 reserved networks`: https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml
 .. _`IPv6 reserved networks`: https://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml
-.. _`is_global`: https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv4Address.is_global
+.. _is_global: https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv4Address.is_global
 .. _`Mozilla public suffix registry`: https://publicsuffix.org
 .. _`ipaddress.ip_address`: https://docs.python.org/3/library/ipaddress.html#ipaddress.ip_address
