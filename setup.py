@@ -3,7 +3,7 @@ import pathlib
 import re
 
 from collections import OrderedDict
-from setuptools import setup
+from setuptools import find_packages, setup
 
 
 HERE = pathlib.Path(__file__).parent
@@ -29,7 +29,7 @@ setup(
     author_email = 'ricky.cook@bluebike.com.au',
     description = 'Check domains, IPs, and hosts to ensure they are "external"',
     long_description = README,
-    py_modules = ['check_external_net'],
+    packages = find_packages(),
     install_requires = (
         'publicsuffix2',
     ),
