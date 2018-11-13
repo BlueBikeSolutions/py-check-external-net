@@ -1,11 +1,11 @@
-""" Check domains, IPs, and networks for internal/external/reserved """
+""" Check domains, IPs, and hosts to ensure they are "external" """
 
 import ipaddress
 
 import publicsuffix2
 
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 
 def is_external_address(addr):
