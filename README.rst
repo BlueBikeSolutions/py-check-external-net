@@ -45,21 +45,21 @@ it's treated as a domain.
 
 ::
 
->>> check_external_net.is_external_host('127.0.0.1')
-False
->>> check_external_net.is_external_host('::0')
-False
->>> check_external_net.is_external_host('8.8.8.8')
-True
->>> check_external_net.is_external_host('::ffff:8.8.8.8')
-True
->>> check_external_net.is_external_host('localhost')
-False
->>> check_external_net.is_external_host('cluster.local')
-False
->>> check_external_net.is_external_host('google.com')
-True
->>> check_external_net.is_external_host('dutyof.care')
-True
+  >>> check_external_net.is_external_host('127.0.0.1')
+  False
+  >>> check_external_net.is_external_host('::0')
+  False
+  >>> check_external_net.is_external_host('8.8.8.8')
+  True
+  >>> check_external_net.is_external_host('::ffff:8.8.8.8')
+  True
+  >>> check_external_net.is_external_host('localhost')
+  False
+  >>> check_external_net.is_external_host('cluster.local')
+  False
+  >>> check_external_net.is_external_host('google.com')
+  True
+  >>> check_external_net.is_external_host('dutyof.care')
+  True
 
 .. `ipaddress.ip_address`: https://docs.python.org/3/library/ipaddress.html#ipaddress.ip_address
