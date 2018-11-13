@@ -4,3 +4,5 @@ __pycache__/
 *.pyc
 
 python_env/
+dist/
+*.egg-info
